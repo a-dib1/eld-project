@@ -1,0 +1,16 @@
+Django==4.2.20
+psycopg2-binary==2.9.10
+gunicorn==21.2.0
+dj-database-url==2.1.0
+whitenoise==6.6.0
+djangorestframework==3.15.2
+djangorestframework_simplejwt==5.5.0
+channels==4.2.0
+channels_redis==4.2.1
+daphne==4.1.2
+python-socketio==5.12.1
+bcrypt==4.3.0
+django-cors-headers==4.7.0
+pyOpenSSL==25.0.0
+service-identity==24.2.0
+python-dotenv==1.0.1
