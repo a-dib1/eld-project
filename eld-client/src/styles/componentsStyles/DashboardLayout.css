@@ -1,0 +1,423 @@
+.DashMainLayoutContainer,
+.DashMainLayoutContentC{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.DashMainLayoutContentC{
+    display: flex;
+    position: relative;
+}
+
+.DashMainSidebarLayoutContainer,
+.DashMainSidebarLayoutContainerColl{
+    transform: translateX(0);
+    border-right: 1px solid rgb(220,220,220);
+    width: 350px;
+    height: 100%;
+    position: relative;
+    padding-top: 60px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-left: 6px;
+    transition: .2s ease-in-out;
+    margin-left: 0;
+}
+.DashMainSidebarLayoutContainerColl{
+    transform: translateX(-100%);
+    transition: .2s ease-in-out;
+    margin-left: -350px;
+}
+
+.DashMainSidebarTopContainer{
+    width: 350px;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0 20px;
+}
+.SidebarTopContainerContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.SidebarTopContentSec{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+}
+.SidebarTopCollBtn,
+.SidebarTopCollBtnSm{
+    background-color: rgb(250,250,250);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 6px 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.SidebarTopCollBtn:hover,
+.SidebarTopCollBtnSm:hover{
+    background-color: rgb(245,245,245);
+}
+.SidebarTopCollBtnSm{
+    display: none;
+}
+.SidebarTopCollBtnLinesC{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: grid;
+    gap: 8px;
+}
+.SidebarTopCollBtnLine{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(120,120,120);
+    position: relative;
+}
+.SidebarTopAddBtnC{
+    border: 1px solid transparent;
+    padding: 6px;
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.SidebarTopAddBtnC:hover{
+    border: 1px solid rgb(180,180,180);
+}
+.SidebarTopAddBtnCSm{
+    display: none;
+}
+.SidebarTopAddBtn{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: rgb(60,60,60);
+}
+.SidebarTopAddIcon{
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.DashMainSidebarLayoutContainer::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+  
+  .DashMainSidebarLayoutContainer::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .DashMainSidebarLayoutContainer::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-top: 60px solid transparent;
+    background-clip: padding-box;
+  }
+  
+  .DashMainSidebarLayoutContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-top: 60px solid transparent;
+    background-clip: padding-box; 
+  }
+
+.DashMainSidebarFrame{
+    width: 1px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 350px;
+    background-color: rgb(220,220,220);
+    z-index: 20;
+}
+
+.DashMainSidebarLayoutContentC{
+    width: 100%;
+    min-height: 100%;
+    padding: 14px 6px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.DashMainSidebarLayoutContentCSm{
+    display: none;
+}
+.SidebarTripUniteContainer,
+.SidebarTripUniteContainerActive{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.SidebarTripUniteContainer:hover{
+    background-color: rgb(250,250,250);
+}
+.SidebarTripUniteContainerActive{
+    background-color: rgb(245,245,245);
+}
+.SidebarTripUniteContainerActive:hover{
+    background-color: rgb(245,245,245);
+}
+.SidebarTripUniteContentC{
+    display: grid;
+    gap: 6px;
+}
+.SidebarTripHeadersC{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.SidebarTripHeaders{
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    color: rgb(80,80,80);
+}
+.SidebarTripDetailsC{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-left: 6px;
+    display: grid;
+    gap: 6px;
+}
+.SidebarTripLocation{
+    width: auto;
+    height: auto;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(90,90,90);
+}
+.SidebarTripLocLay{
+    width: 2px;
+    height: calc(100% - 12px);
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 0px;
+    background-color: rgb(180,180,180);
+    border-radius: 2px;
+}
+
+
+
+.DashMainSidebarLayoutBottomContainer{
+    border-top: 1px solid rgb(220,220,220);
+    width: 350px;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    background-color: rgb(255,255,255,.8);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.DashMainSbBottomContentC{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+}
+
+.DashMainSbBLinkC{
+    background-color: rgb(60,60,60);
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+.DashMainSbBLinkC:hover{
+    background-color: rgb(40,40,40);
+}
+.DashMainSbBLinkTag{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255,255,255);
+    letter-spacing: .5px;
+}
+.DashMainSbBIconC{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DashMainSbBIcon{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DashMainOutletLayoutContainer,
+.DashMainOutletLayoutContainerColl{
+    width: calc(100% - 350px);
+    height: 100%;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+.DashMainOutletLayoutContainerColl{
+    width: 100vw;
+    transition: .2s ease-in-out;
+}
+
+@media(max-width: 1540px) {
+
+    .DashMainSidebarLayoutContainer,
+    .DashMainSidebarLayoutContainerColl{
+        width: 250px;
+        margin-left: 0;
+    }
+    .DashMainSidebarLayoutContainerColl{
+        margin-left: -250px;
+    }
+
+    .DashMainSidebarTopContainer{
+        width: 250px;
+    }
+
+    .DashMainSidebarFrame{
+        left: 250px;
+    }
+
+    .DashMainSidebarLayoutBottomContainer{
+        width: 250px;
+    }
+    .DashMainOutletLayoutContainer,
+    .DashMainOutletLayoutContainerColl{
+        width: calc(100% - 250px);
+    }
+    .DashMainOutletLayoutContainerColl{
+        width: 100vw;
+    }
+
+    .SidebarTripUniteContentC{
+        gap: 3px;
+    }
+    .SidebarTripHeaders{
+        font-size: 17px;
+    }
+    .SidebarTripLocation{
+        font-size: 14px;
+    }
+
+    .SidebarTopAddBtn{
+        font-size: 13px;
+    }
+
+    .SidebarTopAddIcon{
+        width: 15px;
+        height: 15px;
+    }
+
+    .SidebarTopCollBtn{
+        width: 40px;
+        height: 40px;
+    }
+    .SidebarTopCollBtnLinesC{
+        gap: 6px;
+    }
+
+}
+
+@media(max-width: 1120px){
+
+    .DashMainSidebarLayoutContainer,
+    .DashMainSidebarLayoutContainerColl{
+        background-color: rgb(255,255,255);
+        position: fixed;
+        z-index: 15;
+        left: -250px;
+        margin-left: -250px;
+        transform: translateX(-100%);
+    }
+    .DashMainSidebarLayoutContainerColl{
+        transform: translateX(0);
+        margin-left: 0;
+        left: 0;
+    }
+    .SidebarTopCollBtnSm{
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+
+    .DashMainOutletLayoutContainer,
+    .DashMainOutletLayoutContainerColl{
+        width: 100vw;
+    }
+    .DashMainOutletLayoutContainerColl{
+        width: 100vw;
+    }
+
+    .DashMainSidebarLayoutContentC{
+        display: none;
+    }
+    .DashMainSidebarLayoutContentCSm{
+        /* border: 1px solid lime; */
+        width: 100%;
+        min-height: 100%;
+        padding: 14px 6px;
+        padding-bottom: 80px;
+        position: relative;
+        display: block;
+    }
+    .SidebarTopAddBtnC{
+        display: none;
+    }
+    .SidebarTopAddBtnCSm{
+        /* border: 1px solid rgb(120,120,120); */
+        border: 1px solid transparent;
+        padding: 6px;
+        border-radius: 6px;
+        width: auto;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        cursor: pointer;
+    }
+    .SidebarTopAddBtnCSm:hover{
+        border: 1px solid rgb(180,180,180);
+    }
+
+}

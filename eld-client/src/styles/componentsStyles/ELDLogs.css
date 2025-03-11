@@ -1,0 +1,38 @@
+
+
+.LogSheetListGrid{
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: grid;
+    gap: 60px;
+}
+
+.LogSheetUniteC{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.LogSheetUniteHeaders{
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(120,120,120);
+    padding-bottom: 6px;
+}
+
+.LogSheetUniteCanvasC{
+    border: 1px solid  rgb(120,120,120);
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 12px;
+    padding: 12px 0;
+}
+.CanvasMainS{
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}

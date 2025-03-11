@@ -1,0 +1,129 @@
+.HomeMainContainer{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.HomeMainContentContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomeMainCenterContentC{
+    width: auto;
+    height: auto;
+    position: relative;
+    display: grid;
+    gap: 24px;
+}
+
+.HomeMainCenterHeadersC{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.HomeMainCenterHeaders{
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(120,120,120);
+}
+
+.HomeMainCenterLinkBtnC{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.HomeMainCenterLinkBtn{
+    background-color: rgb(250,250,250);
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(40,40,40);
+    letter-spacing: .5px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+.HomeMainCenterLinkBtn:hover{
+    background-color: rgb(245,245,245);
+}
+
+.HomeMainCenterLinkBtnLog{
+    border: 1px solid rgb(40,40,40);
+    font-size: 22px;
+    font-weight: 500;
+    padding: 12px;
+    border-radius: 12px;
+    color: rgb(40,40,40);
+}
+.HomeMainCenterLinkBtnTag{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(40,40,40);
+    letter-spacing: .5px;
+}
+.HomeMainCenterLinkBtnReg{
+    color: rgb(20,20,20);
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 6px;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+.HomeMainCenterLinkBtnReg:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1540px) {
+
+    .HomeMainCenterHeaders{
+        font-size: 23px;
+    }
+
+    .HomeMainCenterLinkBtn{
+        font-size: 14px;
+    }
+    .HomeMainCenterLinkBtnLog{
+        font-size: 14px;
+    }
+    .HomeMainCenterLinkBtnTag{
+        font-size: 14px;
+    }
+    .HomeMainCenterLinkBtnReg{
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 450px) {
+
+    .HomeMainCenterHeaders{
+        font-size: 17px;
+    }
+
+    .HomeMainCenterLinkBtn{
+        font-size: 12px;
+    }
+    .HomeMainCenterLinkBtnLog{
+        border-radius: 6px;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .HomeMainCenterLinkBtnTag{
+        font-size: 12px;
+    }
+    .HomeMainCenterLinkBtnReg{
+        font-size: 12px;
+    }
+
+}
