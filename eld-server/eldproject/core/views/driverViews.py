@@ -11,6 +11,10 @@ from core.serializers.driverSerializers import VerifyTokenSerializer, DriverSeri
 
 
 
+# For simplicity, this implementation uses only JWT tokens for authentication.
+# In a real-world application, I would enhance security by combining JWT with
+# additional security models such as browser fingerprints, session-based authentication, and 
+# asymmetric encryption to protect sensitive user data.
 
 class VerifyTokenDriverAPIView(APIView):
     def post(self, request):
